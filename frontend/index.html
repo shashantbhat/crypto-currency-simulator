@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Crypto Simulator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Crypto Simulator</h1>
+  <div id="app">
+    <button onclick="createWallet()">Create Wallet</button>
+    <pre id="wallet"></pre>
+    <input id="from" placeholder="Sender Public Key">
+    <input id="to" placeholder="Recipient Public Key">
+    <input id="amount" type="number" placeholder="Amount">
+    <button onclick="sendTransaction()">Send</button>
+    <button onclick="mine()">Mine</button>
+    <button onclick="loadChain()">View Blockchain</button>
+    <pre id="output"></pre>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
